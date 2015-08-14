@@ -22,8 +22,8 @@ var TrackerUtils = (function() {
     }
 
 
-    my.addTrackingColor = function(value, name, tracker) {
-        var components = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(value);
+    my.addTrackingColor = function(color, name, tracker) {
+        var components = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(color);
         var customColorR = parseInt(components[1], 16);
         var customColorG = parseInt(components[2], 16);
         var customColorB = parseInt(components[3], 16);
